@@ -42,7 +42,7 @@ const CountDown = () => {
     const currentDate = new Date();
     const days = Math.floor((inputDate - currentDate) / (1000 * 60 * 60 * 24));
 
-    if (days > 100) {
+    if (days > 99) {
       setError(<p style={{color:"#bc42f5"}}>'Selected time is more than 100 days.'</p>);
     } else {
       setCountdownActive(true);
